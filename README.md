@@ -37,18 +37,23 @@ Prometheus
 ----------
 * How to run the program : Prometheus provides a web UI for running basic queries located at http://<your_server_IP>:9090/ -> Eg:- Prometheus provides a web UI for running basic queries located at http://localhost:9090/graph
 
-* Step-by-step bullets
+* Open the web browser and browse the above URL.
 ```
-code blocks for commands
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable prometheus
+$ sudo systemctl start prometheus
+$ sudo systemctl status prometheus
 ```
 
 Graphite----------
 http://localhost:80
 
-* How to run the program
-* Step-by-step bullets
+* Open the web browser and browse the above URL.
+* Important commands given below
 ```
-code blocks for commands
+sudo apt-get install graphite-web graphite-carbon
+sudo systemctl start carbon-cache
+sudo systemctl enable carbon-cache
 ```
 
 Graphana
@@ -58,10 +63,13 @@ http://localhost:3000/dashboard
 un:admin
 pw:admin
 
-* How to run the program
-* Step-by-step bullets
+* Open the web browser and browse the above URL. Use above credentials to login.
+* Some important code blocks are given below.
 ```
-code blocks for commands
+systemctl daemon-reload
+systemctl start grafana-server
+systemctl status grafana-server
+sudo systemctl enable grafana-server.service
 ```
 
 ## Help
