@@ -1,5 +1,5 @@
 # Open-Source-Monitoring-Stack
-This program will help you to we to monitor our applications and infrastructure environments. 
+This program will help you to easily monitor our applications and infrastructure environments. 
 
 # Application & Infrastructure Monitoring Application
 
